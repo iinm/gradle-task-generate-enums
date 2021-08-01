@@ -1,0 +1,11 @@
+[
+  {
+    "name": "UserRegistrationStatus",
+    "description": "ユーザ登録ステータス",
+    "values": [
+      { "description": "メールアドレス確認中", "string": "confirmation_email_sent", "integer": "1" },
+      { "description": "メールアドレス確認済み", "string": "email_confirmed", "integer": "2" },
+      { "description": "メールアドレス確認期限切れ", "string": "confirmation_link_expired", "integer": "3" }
+    ]
+  }
+]
