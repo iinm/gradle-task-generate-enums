@@ -21,7 +21,7 @@ public enum ${name} {
 
     public static ${name} fromString(String stringValue) {
         return Arrays.stream(${name}.values())
-                .filter(v -> v.stringValue == stringValue)
+                .filter(v -> v.stringValue.equals(stringValue))
                 .findFirst()
                 .orElseThrow(() -> new EnumConstantNotPresentException(
                         ${name}.class, stringValue));
